@@ -1,5 +1,6 @@
 import React from 'react'
 import dummy from "./dummy.jpeg"
+import image from './home_image.png'
 
 
 function Home() {
@@ -7,7 +8,7 @@ function Home() {
     <>
     <div id='wrapper'>
        <div className='left-right'> 
-       <img src={dummy}></img>
+       <img src={image}></img>
          <div className='left'></div>
     
          <div className='right'>

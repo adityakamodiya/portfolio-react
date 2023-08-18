@@ -5,7 +5,10 @@ function Sub_Work() {
     <>
        <div className='sub-work'>
           <div className='left'><h3>UN,2022 - PRESENT</h3></div>
-          <div className='right'>
+
+          
+          <div className='right' >
+          
           <h3>PANAPPS INC</h3>
           <h2>Software Developer</h2>
           <ul>
