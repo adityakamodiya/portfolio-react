@@ -1,8 +1,8 @@
 import React from 'react'
 import dummy from "./dummy.jpeg"
 import image from './home_image.png'
-
-
+import resume from './Images/Resume_-_Aditya_Kamodiya_Latest[1].PDF'
+import { Link } from 'react-router-dom'
 function Home() {
   return (
     <>
@@ -16,8 +16,8 @@ function Home() {
             <h1>Aditya kamodiya</h1>
             </div>
           <div className='buttons'>
-            <button>resume</button>
-            <button>hire me</button>
+            <button><a  href={resume}>resume</a></button>
+            <button> <Link to='/Hire me'>hire me</Link></button>
           </div>
          </div>
        </div>
