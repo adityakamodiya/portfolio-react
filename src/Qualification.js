@@ -70,17 +70,17 @@ const Qualification = () => {
         <ul>
           <li className='projectItem'>
             <strong>Resort API</strong><br />
-            <a href="https://github.com/yourusername/resort-api" target="_blank" rel="noopener noreferrer">GitHub Link</a><br />
+            <a href="https://github.com/adityakamodiya/server" target="_blank" rel="noopener noreferrer">GitHub Link</a><br />
             Developed a RESTful API using Node.js and MongoDB. Integrated Firebase authentication and deployed on Render.
           </li>
           <li className='projectItem'>
             <strong>File Uploader</strong><br />
-            <a href="https://github.com/yourusername/file-uploader" target="_blank" rel="noopener noreferrer">GitHub Link</a><br />
+            <a href="https://github.com/adityakamodiya/file-uploader" target="_blank" rel="noopener noreferrer">GitHub Link</a><br />
             Created a form and admin panel with React and MongoDB. Implemented file uploading with Cloudinary.
           </li>
           <li className='projectItem'>
             <strong>School Website Frontend</strong><br />
-            <a href="https://github.com/yourusername/school-website-frontend" target="_blank" rel="noopener noreferrer">GitHub Link</a><br />
+            <a href="https://github.com/adityakamodiya/school-website" target="_blank" rel="noopener noreferrer">GitHub Link</a><br />
             Developed the frontend of a school website using HTML, CSS, and React. Designed responsive and interactive UI elements to enhance user experience.
           </li>
         </ul>
@@ -91,19 +91,19 @@ const Qualification = () => {
         <ul>
           <li>
             <strong>React Certification</strong>, HackerRank, August 2024<br />
-            <a href="https://www.hackerrank.com/certificates/your-react-certification-link" target="_blank" rel="noopener noreferrer">View Certificate</a>
+            <a href="https://www.hackerrank.com/adityakamodiya" target="_blank" rel="noopener noreferrer">View Certificate</a>
           </li>
-          <li>
-            <strong>JavaScript Fundamentals</strong>, Coursera, June 2023<br />
-            <a href="https://www.coursera.org/account/accomplishments/certificate/your-javascript-certificate-link" target="_blank" rel="noopener noreferrer">View Certificate</a>
-          </li>
+          {/* <li> */}
+            {/* <strong>JavaScript Fundamentals</strong>, Coursera, June 2023<br /> */}
+            {/* <a href="https://www.hackerrank.com/adityakamodiya" target="_blank" rel="noopener noreferrer">View Certificate</a> */}
+          {/* </li> */}
           <li>
             <strong>CSS Certification</strong>, HackerRank, August 2024<br />
-            <a href="https://www.hackerrank.com/certificates/your-css-certification-link" target="_blank" rel="noopener noreferrer">View Certificate</a>
+            <a href="https://www.hackerrank.com/adityakamodiya" target="_blank" rel="noopener noreferrer">View Certificate</a>
           </li>
           <li>
             <strong>JavaScript Certification</strong>, HackerRank, August 2024<br />
-            <a href="https://www.hackerrank.com/certificates/your-javascript-certification-link" target="_blank" rel="noopener noreferrer">View Certificate</a>
+            <a href="https://www.hackerrank.com/adityakamodiya" target="_blank" rel="noopener noreferrer">View Certificate</a>
           </li>
         </ul>
       </section>

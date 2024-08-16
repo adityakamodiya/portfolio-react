@@ -2,34 +2,37 @@ import React from "react";
 import { Container, Row, Col, Card, Button, Modal } from "react-bootstrap";
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import api from './Images/api.png'
+import fileuploader from './Images/fileuploader.png'
+import school from './Images/school.png'
 
 import './CSS/Work.css';
 
 // Sample Project Data
 const projects = [
-  {
+  { 
     title: "School Website",
     description: "A dynamic school website built using HTML, CSS, and React JS. It features interactive elements and a responsive design.",
     technologies: ["HTML", "CSS", "React JS"],
-    liveLink: "https://school-website.example.com",
+    liveLink: "https://school-website-one-phi.vercel.app/",
     githubLink: "https://github.com/adityakamodiya/school-website",
-    screenshot: "school-website-screenshot.jpg"
+    screenshot: school
   },
   {
     title: "Resort API",
     description: "A RESTful API for a resort booking system using Node.js, Express, and MongoDB. It includes features for booking management and user authentication. Integrated Cloudinary for image and file storage management, allowing easy upload and management of media files. Utilized Postman for comprehensive API testing to ensure robust and reliable endpoints. Added Firebase authentication for secure user login and management. The API supports data updation and deletion operations, with a frontend interface built using HTML, CSS, and React for seamless interaction with the API.",
     technologies: ["Node.js", "Express", "MongoDB", "Cloudinary", "Postman", "Firebase", "HTML", "CSS", "React"],
-    liveLink: "https://resort-api.example.com",
-    githubLink: "https://github.com/adityakamodiya/resort-api",
-    screenshot: "resort-api-screenshot.jpg"
+    liveLink: "https://server-5a5x.onrender.com/",
+    githubLink: "https://github.com/adityakamodiya/server",
+    screenshot: api
   },
   {
     title: "File Uploader Project",
     description: "A file uploader application inspired by Google Forms. Users can upload files, which are then managed using Cloudinary for storage. Cloudinary was used for efficient image and file storage management, while Postman was utilized for API testing to ensure functionality. Implemented robust file handling and user interface features.",
     technologies: ["React JS", "Node.js", "Cloudinary", "Postman"],
-    liveLink: "https://file-uploader.example.com",
+    liveLink: "https://file-uploader-form.onrender.com/",
     githubLink: "https://github.com/adityakamodiya/file-uploader",
-    screenshot: "file-uploader-screenshot.jpg"
+    screenshot: fileuploader
   },
   // Add more projects as needed
 ];

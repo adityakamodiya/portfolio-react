@@ -27,10 +27,10 @@ const Contact = () => {
       
       <section className="contactInfo">
         <h2>Contact Information</h2>
-        <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+        <p>Email: <a href="mailto:adityakamodiya@gmail.com">adityakamodiya@gmail.com</a></p>
         <p>Phone: +123 456 7890</p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a></p>
-        <p>GitHub: <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">GitHub Profile</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/aditya-kamodiya-9b7a13240/" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a></p>
+        <p>GitHub: <a href="https://github.com/adityakamodiya" target="_blank" rel="noopener noreferrer">GitHub Profile</a></p>
       </section>
     </div>
   );
