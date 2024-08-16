@@ -1,20 +1,39 @@
-import React from 'react'
+import React from 'react';
+import './CSS/Contact.css'; // Import the CSS file
+import './CSS/Home.css'; // Import the CSS file
+import { useEffect } from 'react';
+const Contact = () => {
+  
 
-function Contact() {
   return (
-    <>
-    <div id='wrapper' className='contact-wrapper'>
-      <h1>contact</h1>
-      <form>
-    <input type='text' placeholder='name'></input>
-     <div> <input type='email' placeholder='E-mail'></input><input type='number' placeholder='contact'></input></div> 
-     <input type='text' placeholder='subject'></input>
-     <input type='textarea' placeholder='write something'></input>
-     <button> Submit </button>
-      </form>
-      </div>
-    </>
-  )
-}
+    <div className="contactContainer">
+      <h1>Contact Me</h1>
+      
+      <section className="contactForm">
+        <h2>Send Me a Message</h2>
+        <form>
+          <label htmlFor='name'>Name:</label>
+          <input type='text' id='name' name='name' required />
 
-export default Contact
+          <label htmlFor='email'>Email:</label>
+          <input type='email' id='email' name='email' required />
+
+          <label htmlFor='message'>Message:</label>
+          <textarea id='message' name='message' rows='5' required></textarea>
+
+          <button type='submit'>Send Message</button>
+        </form>
+      </section>
+      
+      <section className="contactInfo">
+        <h2>Contact Information</h2>
+        <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+        <p>Phone: +123 456 7890</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a></p>
+        <p>GitHub: <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">GitHub Profile</a></p>
+      </section>
+    </div>
+  );
+};
+
+export default Contact;

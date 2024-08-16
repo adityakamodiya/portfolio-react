@@ -83,7 +83,7 @@ i {
 }
 
 .left-right .right .name {
-    height: 50px;
+    height: auto;
     width: 40%;
     font-size: 20px;
     text-align: center;

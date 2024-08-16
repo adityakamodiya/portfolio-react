@@ -1,0 +1,78 @@
+/* src/Contact.css */
+
+.contactContainer {
+    padding: 20px;
+    max-width: 100%;
+    margin-left: 8%;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f9f9f9; /* Soft background color */
+}
+
+.contactContainer h1 {
+    text-align: center;
+    color: #2c3e50; /* Dark color for headings */
+    margin-bottom: 30px;
+}
+
+.contactContainer section {
+    background-color: #fff; /* White background for sections */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for sections */
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.contactContainer h2 {
+    color: #3498db; /* Bright color for section headers */
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.contactForm form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contactForm label {
+    margin-bottom: 5px;
+    color: #333; /* Dark grey for labels */
+}
+
+.contactForm input, .contactForm textarea {
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #ffffff; /* White background for input fields */
+    color: #333;
+}
+
+.contactForm input:focus, .contactForm textarea:focus {
+    border-color: #007bff; /* Bright blue border on focus */
+    outline: none;
+}
+
+.contactForm button {
+    background-color: #007bff; /* Bright blue for button */
+    color: #ffffff;
+    border: none;
+    padding: 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.contactForm button:hover {
+    background-color: #0056b3; /* Darker blue for hover effect */
+}
+
+.contactInfo a {
+    color: #007bff; /* Bright blue for links */
+    text-decoration: none;
+}
+
+.contactInfo a:hover {
+    color: #0056b3; /* Darker blue for hover effect */
+}

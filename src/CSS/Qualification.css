@@ -1,0 +1,88 @@
+/* src/Qualifications.css */
+
+#Qualification {
+    margin-left: 8%;
+}
+
+
+.qualificationsContainer {
+    padding: 20px;
+    max-width: 100%;
+    margin: 0 auto;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f9f9f9;  /* Soft background color
+    /* background-color: red; */
+}
+
+.qualificationsContainer h1 {
+    text-align: center;
+    color: #2c3e50; /* Dark color for headings */
+    margin-bottom: 30px;
+}
+
+.qualificationsContainer section {
+    background-color: #fff; /* White background for sections */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for sections */
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.qualificationsContainer h2 {
+    color: #3498db; /* Bright color for section headers */
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.qualificationsContainer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.qualificationsContainer li {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.qualificationsContainer strong {
+    color: #2c3e50; /* Dark color for strong text */
+}
+
+.qualificationsContainer a {
+    color: #e74c3c; /* Soft red color for links */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.qualificationsContainer a:hover {
+    color: #c0392b; /* Darker red for hover effect */
+    text-decoration: underline;
+}
+
+.qualificationsContainer .projectItem {
+    margin-bottom: 15px;
+}
+
+.qualificationsContainer .projectItem a {
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+.qualificationsContainer .projectItem a:hover {
+    color: #c0392b;
+}
+
+.qualificationsContainer .certifications a {
+    display: inline-block;
+    margin-top: 5px;
+    color: #e74c3c;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.qualificationsContainer .certifications a:hover {
+    color: #c0392b;
+    text-decoration: underline;
+}

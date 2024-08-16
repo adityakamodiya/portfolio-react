@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col, Card, Image } from "react-bootstrap";
+import { Container, Row, Col, Card } from "react-bootstrap";
 import './CSS/About.css';
 
 const About = () => {
@@ -13,14 +13,11 @@ const About = () => {
       </Row>
 
       <Row className="align-items-center">
-        <Col md={6} className="text-center">
-          <Image src="your-image-url.jpg" roundedCircle className="profile-image" />
-        </Col>
-        <Col md={6}>
+        <Col>
           <Card className="about-card shadow-lg">
             <Card.Body>
               <Card.Text>
-                Hello! I'm Aditya Kamodiya, a full-stack developer specializing in the MERN stack (MongoDB, Express.js, React, Node.js) and with a strong foundation in Java technologies like Spring, Servlets, and JSP. I have experience working on various web development projects from dynamic front-end interfaces to complex back-end logic, always striving to create solutions that are both elegant and efficient.
+                Hello! I'm <strong>Aditya Kamodiya</strong>, a <strong>full-stack developer</strong> specializing in the MERN stack (MongoDB, Express.js, React, Node.js) and with a strong foundation in Java technologies like Spring, Servlets, and JSP. I have experience working on various web development projects from dynamic front-end interfaces to complex back-end logic, always striving to create solutions that are both elegant and efficient.
               </Card.Text>
               <Card.Text>
                 My passion for technology started early on, and over the years, I've honed my skills across multiple programming languages and frameworks. I believe in continuous learning and love taking on new challenges that push the boundaries of my knowledge. Whether working solo or collaborating with a team, I am committed to delivering high-quality work and driving impactful results.

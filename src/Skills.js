@@ -1,16 +1,23 @@
-import React from 'react'
-import image  from'./skilllllllll.png'
-function Skills() {
-  return (<>
-    <div id='wrapper'className='skill-wrapper'>
-    <h1>skills</h1>  
-    <div className='image-section'>
-      <img src={image}></img>
-      <h3>Developer</h3>
-    </div>
-    </div>
-    </>
-  )
-}
+import React from 'react';
+import './CSS/Skills.css'; // Import the CSS file
 
-export default Skills
+const Skills = () => {
+  return (
+    <div className="skillsContainer">
+      <h1>Skills</h1>
+      
+      <section className="technicalSkills">
+        <h2>Technical Skills</h2>
+        <ul>
+          <li><strong>Languages:</strong> Java, JavaScript</li>
+          <li><strong>Front-End:</strong> HTML, CSS, React</li>
+          <li><strong>Back-End:</strong> Node.js, Java, Servlets, JSP, Spring Boot</li>
+          <li><strong>Databases:</strong> MongoDB, MySQL</li>
+          <li><strong>Tools & Technologies:</strong> Postman, Cloudinary, Firebase</li>
+        </ul>
+      </section>
+    </div>
+  );
+};
+
+export default Skills;
