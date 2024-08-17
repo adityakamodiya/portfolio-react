@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from "react-router-dom";
 import './CSS/Header.css'; // Make sure to import your CSS file
+import './portfoluo.css'
 
 function Header() {
   const [waveActive, setWaveActive] = useState(false);
