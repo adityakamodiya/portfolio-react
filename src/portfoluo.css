@@ -64,12 +64,12 @@ i:hover {
     width: 23%;
 }
 
-.left-right .left {
-    background: black;
-    width: 20%;
+/* .left-right .left { */
+    /* background: black; */
+    /* width: 20%; */
     /* border: 1px solid; */
-    height: 100vh;
-}
+    /* height: 100vh; */
+/* } */
 
 .left-right .right {
     display: flex;
