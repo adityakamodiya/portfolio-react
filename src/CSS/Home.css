@@ -1,22 +1,125 @@
-.trail {
-    position: absolute;
-    width: 15px; /* Adjust size as needed */
-    height: 15px; /* Adjust size as needed */
-    border-radius: 50%;
-    background: rgba(255, 0, 0, 0.5); /* Adjust color as needed */
-    pointer-events: none;
-    filter: drop-shadow(1px 1px 1px yellow);
-    animation: trail-animation 0.4s ease-out;
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Wrapper for full page */
+#wrapper {
+  height: 100vh;
+  margin-left: 8%;
+}
+
+/* Left-right container for desktop */
+.left-right {
+  position: relative;
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.left-right img {
+  box-shadow: -14px 10px white;
+  position: absolute;
+  left: 9%;
+  top: 30%;
+  height: 45%;
+  width: 23%;
+}
+
+.left-right .left {
+  background: black;
+  width: 20%;
+  height: 100vh;
+}
+
+.left-right .right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  height: 100vh;
+}
+
+.left-right .right .name {
+  height: auto;
+  width: 40%;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 10px;
+  border-left: 3px solid;
+}
+
+.left-right .right .buttons button {
+  border-radius: 5px;
+  padding: 10px 30px;
+  font-size: 20px;
+  margin: 0 10px;
+}
+
+/* Mobile responsive styles */
+@media (max-width: 768px) {
+  #wrapper {
+    margin-left: 0;
+  }
+
+  .left-right {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .left-right img {
+    position: relative;
+    left: auto;
+    top: auto;
+    width: 60%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .left-right .right {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .left-right .right .name {
+    width: 80%;
+    font-size: 18px;
+  }
+
+  .left-right .right .buttons button {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+}
+
+/* For extra small devices */
+@media (max-width: 480px) {
+  .left-right img {
+    width: 80%;
   }
   
-  @keyframes trail-animation {
-    from {
-      transform: scale(1);
-      opacity: 1;
-    }
-    to {
-      transform: scale(0);
-      opacity: 0;
-    }
+.left-right .left{
+  display: none;
+}
+.left-right img{
+  box-shadow: none;
+}
+nav ul{
+  margin: 0;
+  padding-left: 0;
+
+}
+  .left-right .right .name {
+    font-size: 16px;
   }
-  
+
+  .left-right .right .buttons button {
+    padding: 8px 15px;
+    font-size: 14px;
+  }
+}
