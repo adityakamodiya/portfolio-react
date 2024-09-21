@@ -5,6 +5,9 @@
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
 }
+#root{
+  display: flex;
+}
 
 /* Wrapper for full page */
 #wrapper {
@@ -99,21 +102,26 @@
 
 /* For extra small devices */
 @media (max-width: 480px) {
+  #wrapper{
+    display: flex;
+  }
   .left-right img {
     width: 80%;
   }
   
-.left-right .left{
-  display: none;
-}
-.left-right img{
-  box-shadow: none;
-}
-nav ul{
-  margin: 0;
-  padding-left: 0;
+  .left-right .left {
+    display: none;
+  }
 
-}
+  .left-right img {
+    box-shadow: none;
+  }
+
+  nav ul {
+    margin: 0;
+    padding-left: 0;
+  }
+
   .left-right .right .name {
     font-size: 16px;
   }
@@ -122,4 +130,85 @@ nav ul{
     padding: 8px 15px;
     font-size: 14px;
   }
+}
+
+/* Navigation Styles */
+nav {
+  position: relative;
+  z-index: 10;
+  height: unset;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+  position: relative;
+  z-index: 11; /* Ensures the nav links are above other content */
+}
+
+nav ul li {
+  position: relative;
+}
+
+nav ul li a {
+  display: inline-block;
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+  z-index: 12; /* Ensures the nav icons are clickable */
+  pointer-events: auto; /* Makes sure the icons are clickable */
+}
+
+
+
+/* Tooltip styling */
+.nav-link {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip {
+  visibility: hidden;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  padding: 5px;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%; /* Place above the icon */
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+  font-size: 12px;
+}
+
+.nav-link:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
+.tooltip::after {
+  content: '';
+  position: absolute;
+  top: 100%; /* At the bottom of the tooltip */
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Wave effect container */
+.wave-effect-container {
+  position: relative;
+  z-index: 9; /* Keeps the wave effect below the nav */
+}
+
+.bright-out, .wave-effect {
+  /* Add your wave effect styling here */
 }
