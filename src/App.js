@@ -7,7 +7,7 @@ import Qualification from './Qualification'
 import Work from './Work'
 import Skills from './Skills'
 import Home from './Home'
-import "./portfoluo.css"
+
 // import ".CSS/Home.css"
 import About from './About'
 import HireMe from './HireMe'
