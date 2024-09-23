@@ -1,7 +1,5 @@
-import React, { useEffect } from 'react';
-import dummy from './dummy.jpeg';
 import image from './home_image.png';
-import resume from './Images/Resume_-_Aditya_Kamodiya_Latest[1].pdf';
+import resume from './Images/Resume_Aditya.pdf';
 import { Link } from 'react-router-dom';
 import './CSS/Home.css'; // Import the CSS file for the styles
 
