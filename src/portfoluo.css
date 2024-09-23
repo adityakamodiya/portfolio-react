@@ -7,8 +7,8 @@
 }
 
 nav {
-    position: fixed;
-    height: 100vh;
+    position: fixed !important ;
+    height: 100vh !important;
     width: 8%;
     background-color: black;
     padding: 11% 0;

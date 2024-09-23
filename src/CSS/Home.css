@@ -135,6 +135,11 @@
     padding: 8px 15px;
     font-size: 14px;
   }
+  nav {
+    position: fixed;
+    z-index: 10;
+    height: 100vh;
+  }
 }
 
 /* Navigation Styles */
@@ -149,11 +154,7 @@ nav ul {
   position: relative;
   z-index: 11; /* Ensures the nav links are above other content */
 }
-nav {
-  position: fixed;
-  z-index: 10;
-  height: 100vh;
-}
+
 nav ul li {
   position: relative;
 }
