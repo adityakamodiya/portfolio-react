@@ -2,8 +2,8 @@
 
 .contactContainer {
     padding: 20px;
-    max-width: 100%;
-    margin-left: 8%;
+    width: 100%;
+    /* margin-left: 8%; */
     font-family: 'Arial', sans-serif;
     color: #333;
     background-color: #f9f9f9; /* Soft background color */
