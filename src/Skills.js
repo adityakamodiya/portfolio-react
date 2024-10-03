@@ -13,7 +13,7 @@ const Skills = () => {
           <li><strong>Front-End:</strong> HTML, CSS, React</li>
           <li><strong>Back-End:</strong> Node.js, Java, Servlets, JSP, Spring Boot</li>
           <li><strong>Databases:</strong> MongoDB, MySQL</li>
-          <li><strong>Tools & Technologies:</strong> Postman, Cloudinary, Firebase</li>
+          <li><strong>Tools & Technologies:</strong>GitHub, CodeSandbox, Postman, Cloudinary, Firebase</li>
         </ul>
       </section>
     </div>

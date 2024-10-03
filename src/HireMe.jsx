@@ -109,7 +109,7 @@ const HireMe = () => {
                   <StarRating stars={3} />
                 </div>
                 <div className="skill">
-                  <p>Spring</p>
+                  <p>SpringBoot</p>
                   <StarRating stars={3} />
                 </div>
                 <div className="skill">
