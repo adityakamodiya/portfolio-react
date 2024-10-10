@@ -5,6 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import api from './Images/api.png'
 import fileuploader from './Images/fileuploader.png'
 import school from './Images/school.png'
+import aadii_infotech from  './Images/aadii_infotech.png'
 
 import './CSS/Work.css';
 
@@ -34,8 +35,16 @@ const projects = [
     githubLink: "https://github.com/adityakamodiya/file-uploader",
     screenshot: fileuploader
   },
-  // Add more projects as needed
+  {
+    title: "Aadii Infotech Pvt Ltd",
+    description: "Learning and IT consulting services, offering innovative solutions for clients. Developed using modern web technologies to ensure seamless user experiences.",
+    technologies: ["HTML", "CSS", "JavaScript", "Bootstrap", "Express JS", "Node JS", "MongoDB"],
+    liveLink: "https://aadii-infotech.onrender.com/",
+    githubLink: "https://github.com/adityakamodiya/Aadii-infotech",
+    screenshot: aadii_infotech
+  }
 ];
+
 
 const Work = () => {
   const [showModal, setShowModal] = React.useState(false);
