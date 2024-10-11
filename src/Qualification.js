@@ -38,7 +38,7 @@ const Qualification = () => {
         <ul>
           <li>
             <strong>Full Stack Developer Intern</strong><br />
-            Full Stack Learning, August 2023 - December 2023<br />
+            Full Stack Learning, May 2023 - December 2023<br />
             - Worked on the development of full-stack web applications, leveraging modern web technologies such as HTML, CSS, JavaScript, React for front-end development, and Node.js for back-end services.<br />
             - Designed and implemented RESTful APIs using Node.js and Express, which communicated with MongoDB for database operations.<br />
             - Collaborated with cross-functional teams to ensure seamless integration of front-end and back-end components.<br />
