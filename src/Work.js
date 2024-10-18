@@ -11,14 +11,15 @@ import './CSS/Work.css';
 
 // Sample Project Data
 const projects = [
-  { 
-    title: "School Website",
-    description: "A dynamic school website built using HTML, CSS, and React JS. It features interactive elements and a responsive design.",
-    technologies: ["HTML", "CSS", "React JS"],
-    liveLink: "https://school-website-one-phi.vercel.app/",
-    githubLink: "https://github.com/adityakamodiya/school-website",
-    screenshot: school
+  {
+    title: "Aadii Infotech Pvt Ltd",
+    description: "Learning and IT consulting services, offering innovative solutions for clients. Developed using modern web technologies to ensure seamless user experiences.",
+    technologies: ["HTML", "CSS", "JavaScript", "Bootstrap", "Express JS", "Node JS", "MongoDB"],
+    liveLink: "https://aadii-infotech.onrender.com/",
+    githubLink: "https://github.com/adityakamodiya/Aadii-infotech",
+    screenshot: aadii_infotech
   },
+  
   {
     title: "Resort API",
     description: "A RESTful API for a resort booking system using Node.js, Express, and MongoDB. It includes features for booking management and user authentication. Integrated Cloudinary for image and file storage management, allowing easy upload and management of media files. Utilized Postman for comprehensive API testing to ensure robust and reliable endpoints. Added Firebase authentication for secure user login and management. The API supports data updation and deletion operations, with a frontend interface built using HTML, CSS, and React for seamless interaction with the API.",
@@ -35,13 +36,13 @@ const projects = [
     githubLink: "https://github.com/adityakamodiya/file-uploader",
     screenshot: fileuploader
   },
-  {
-    title: "Aadii Infotech Pvt Ltd",
-    description: "Learning and IT consulting services, offering innovative solutions for clients. Developed using modern web technologies to ensure seamless user experiences.",
-    technologies: ["HTML", "CSS", "JavaScript", "Bootstrap", "Express JS", "Node JS", "MongoDB"],
-    liveLink: "https://aadii-infotech.onrender.com/",
-    githubLink: "https://github.com/adityakamodiya/Aadii-infotech",
-    screenshot: aadii_infotech
+  { 
+    title: "School Website",
+    description: "A dynamic school website built using HTML, CSS, and React JS. It features interactive elements and a responsive design.",
+    technologies: ["HTML", "CSS", "React JS"],
+    liveLink: "https://school-website-one-phi.vercel.app/",
+    githubLink: "https://github.com/adityakamodiya/school-website",
+    screenshot: school
   }
 ];
 

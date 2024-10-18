@@ -35,6 +35,7 @@ const Qualification = () => {
       
       <section className='experience'>
         <h2>Professional Experience</h2>
+        
         <ul>
           <li>
             <strong>Full Stack Developer Intern</strong><br />
