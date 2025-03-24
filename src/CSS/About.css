@@ -1,107 +1,62 @@
-/* Global container styles */
+/* About Section */
+/* About Section */
 .about-section {
-  background: linear-gradient(135deg, #8EC5FC, #E0C3FC);
+  background: #121212; /* Dark theme */
+  color: #fff;
+  min-height: 100vh; /* Ensures it takes full viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centers content vertically */
+  align-items: center; /* Centers content horizontally */
+  text-align: center;
   padding: 80px 0;
-  padding: 1% 8%;   
-  height: 100vh;
-
+  width: 100%;
+  margin: 0;
 }
 
-/* Section title and subtitle */
+
+/* Section Title */
 .section-title {
   font-size: 2.8rem;
-  font-weight: 700;
-  color: #fff;
+  font-weight: bold;
+  color: #f1c40f;
+  margin-bottom: 10px;
 }
 
 .section-subtitle {
   font-size: 1.3rem;
-  color: #f9f7f7;
+  color: #bbb;
   margin-bottom: 40px;
 }
 
-@media (min-width: 1000px) {
-  .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
-      max-width: 100% !important;
-  }
-}
-
-/* Adjust for mobile devices */
-@media (max-width: 767px) {
-  .about-section {
-    padding: 10px 5%;
-    height: auto;
-    margin-left: 5%;
-  }
-
-  .section-title {
-    font-size: 2rem;
-  }
-
-  .section-subtitle {
-    font-size: 1rem;
-    margin-bottom: 20px;
-  }
-
-  .about-card {
-    padding: 20px;
-  }
-
-  .about-card p {
-    font-size: 1rem;
-  }
-
-  .profile-image {
-    width: 150px;
-    height: 150px;
-    margin-bottom: 15px;
-  }
-}
-
-@media (max-width: 480px) {
-  .section-title {
-    font-size: 1.8rem;
-  }
-
-  .section-subtitle {
-    font-size: 0.9rem;
-    margin-bottom: 15px;
-  }
-
-  .about-card {
-    padding: 15px;
-  }
-
-  .about-card p {
-    font-size: 0.9rem;
-  }
-
-  .profile-image {
-    width: 120px;
-    height: 120px;
-  }
-}
-
-/* Profile image */
-.profile-image {
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
-  border: 5px solid #fff;
-  margin-bottom: 20px;
-}
-
-/* About card */
+/* About Card */
 .about-card {
-  background-color: #fff;
+  background: #1a1a1a;
+  border: none;
   border-radius: 12px;
   padding: 30px;
-  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15);
+  text-align: left;
+  box-shadow: 0px 0px 15px rgba(255, 215, 0, 0.3);
+  transition: all 0.3s ease-in-out;
 }
 
-.about-card p {
-  color: #333;
-  font-size: 1.1rem;
-  line-height: 1.8;
-  margin-bottom: 20px;
+/* Hover Effect */
+.about-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0px 0px 25px rgba(255, 215, 0, 0.4);
+}
+
+/* Card Text */
+.about-card .card-text {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #ddd;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-card {
+    text-align: center;
+    padding: 20px;
+  }
 }

@@ -1,222 +1,103 @@
-/* General Styles */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Arial', sans-serif;
-}
-h1,h2,h4,h5{
-  font-weight: 700;
-}
-#root{
-  display: flex;
-}
-/* Wrapper for full page */
+/* Wrapper styling */
 #wrapper {
-  height: 100vh;
-  margin-left: 8%;
-  width: 100%;
-}
-
-/* Left-right container for desktop */
-.left-right {
-  position: relative;
   display: flex;
-  min-height: 100vh;
-  width: 100%;
-}
-
-.left-right img {
-  box-shadow: -14px 10px white;
-  position: absolute;
-  left: 9%;
-  top: 30%;
-  height: 45%;
-  width: 23%;
-}
-
-/* .left-right .left {
-  background: black;
-  width: 20%;
-  height: 100vh;
-} */
-
-.left-right .right {
-  display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  height: 100vh;
-}
-
-.left-right .right .name {
-  height: auto;
-  width: 40%;
-  font-size: 20px;
-  text-align: center;
-  margin-bottom: 10px;
-  border-left: 3px solid;
-}
-
-.left-right .right .buttons button {
-  border-radius: 5px;
-  padding: 10px 30px;
-  font-size: 20px;
-  margin: 0 10px;
-}
-
-/* Mobile responsive styles */
-@media (max-width: 768px) {
-  #wrapper {
-    margin-left: 0;
-  }
-
-  .left-right {
-    padding-top: 8%;padding-bottom: 8%;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-  .left-right img {
-    position: relative;
-    left: auto;
-    top: auto;
-    width: 60%;
-    height: auto;
-    margin-bottom: 20px;
-  }
-
-  .left-right .right {
-    width: 100%;
-    padding: 20px;
-  }
-
-  .left-right .right .name {
-    width: 80%;
-    font-size: 18px;
-  }
-
-  .left-right .right .buttons button {
-    padding: 10px 20px;
-    font-size: 16px;
-  }
-}
-
-/* For extra small devices */
-@media (max-width: 480px) {
-  #root{
-    display: flex;
-  }
-  #wrapper{
-    display: flex;
-  }
-  .left-right img {
-    width: 80%;
-  }
-  
-  .left-right .left {
-    display: none;
-  }
-
-  .left-right img {
-    box-shadow: none;
-  }
-
-  nav ul {
-    margin: 0;
-    padding-left: 0;
-  }
-
-  .left-right .right .name {
-    font-size: 16px;
-  }
-
-  .left-right .right .buttons button {
-    padding: 8px 15px;
-    font-size: 14px;
-  }
-  nav {
-    position: fixed;
-    z-index: 10;
-    height: 100vh;
-  }
-}
-
-/* Navigation Styles */
-
-
-nav ul {
-  display: flex;
-  justify-content: space-around;
-  list-style: none;
-  margin: 0;
-  padding-left: 0;
-  position: relative;
-  z-index: 11; /* Ensures the nav links are above other content */
-}
-
-nav ul li {
-  position: relative;
-}
-
-nav ul li a {
-  display: inline-block;
-  color: white;
-  font-size: 24px;
-  text-decoration: none;
-  z-index: 12; /* Ensures the nav icons are clickable */
-  pointer-events: auto; /* Makes sure the icons are clickable */
-}
-
-
-
-/* Tooltip styling */
-.nav-link {
-  position: relative;
-  display: inline-block;
-}
-
-.tooltip {
-  visibility: hidden;
-  background-color: #555;
+  min-height: 100vh;
+  background: #121212; /* Dark background */
   color: #fff;
-  text-align: center;
-  padding: 5px;
-  border-radius: 6px;
-  position: absolute;
-  z-index: 1;
-  bottom: 125%; /* Place above the icon */
-  left: 50%;
-  transform: translateX(-50%);
-  opacity: 0;
-  transition: opacity 0.3s;
-  font-size: 12px;
+  padding: 20px;
 }
 
-.nav-link:hover .tooltip {
-  visibility: visible;
-  opacity: 1;
+/* Flexbox layout */
+.left-right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1100px;
+  gap: 50px;
 }
 
-.tooltip::after {
-  content: '';
-  position: absolute;
-  top: 100%; /* At the bottom of the tooltip */
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: #555 transparent transparent transparent;
+/* Image Styling - Enhanced */
+.left-right img {
+  width: 280px; /* Adjusted width */
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 50%; /* Makes image circular */
+  border: 5px solid rgba(255, 255, 255, 0.3); /* Subtle white border */
+  box-shadow: 0px 0px 20px rgba(255, 215, 0, 0.6); /* Golden glow effect */
+  transition: all 0.4s ease-in-out;
 }
 
-/* Wave effect container */
-.wave-effect-container {
-  position: relative;
-  z-index: 9; /* Keeps the wave effect below the nav */
+/* Hover Effect */
+.left-right img:hover {
+  transform: scale(1.08) rotate(3deg);
+  border-color: rgba(255, 215, 0, 0.9); /* Brighter gold on hover */
+  box-shadow: 0px 0px 25px rgba(255, 215, 0, 1); /* More glow on hover */
 }
 
-.bright-out, .wave-effect {
-  /* Add your wave effect styling here */
+/* Right section (text + buttons) */
+.right {
+  flex: 1;
+  text-align: left;
+}
+
+/* Name and title */
+.name h1 {
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+  color: #f1c40f;
+}
+
+.name p {
+  font-size: 1.3rem;
+  color: #bbb;
+}
+
+/* Buttons styling */
+.buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.buttons button {
+  background: #ff9800;
+  border: none;
+  padding: 12px 25px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(255, 152, 0, 0.5);
+}
+
+.buttons button a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.buttons button:hover {
+  background: #ff5722;
+  transform: scale(1.08);
+  box-shadow: 0px 6px 15px rgba(255, 87, 34, 0.7);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .left-right {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .left-right img {
+    width: 200px; /* Adjusted for smaller screens */
+  }
+
+  .buttons {
+    justify-content: center;
+  }
 }

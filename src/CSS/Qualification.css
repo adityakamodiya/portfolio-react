@@ -1,88 +1,116 @@
-/* src/Qualifications.css */
-
-#Qualification {
-    margin-left: 8%;
-}
-
-
+/* General container styling */
 .qualificationsContainer {
-    padding: 20px;
-    max-width: 100%;
-    margin: 0 auto;
-    font-family: 'Arial', sans-serif;
-    color: #333;
-    background-color: #f9f9f9;  /* Soft background color
-    /* background-color: red; */
-}
-
-.qualificationsContainer h1 {
-    text-align: center;
-    color: #2c3e50; /* Dark color for headings */
-    margin-bottom: 30px;
-}
-
-.qualificationsContainer section {
-    background-color: #fff; /* White background for sections */
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for sections */
-    padding: 20px;
-    margin-bottom: 30px;
-}
-
-.qualificationsContainer h2 {
-    color: #3498db; /* Bright color for section headers */
-    border-bottom: 2px solid #3498db;
-    padding-bottom: 10px;
+    width: 100%;
+    min-height: 100vh;
+    padding: 50px 5%;
+    background: linear-gradient(135deg, #0f0f0f, #1e1e1e);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Title Styling */
+  h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
     margin-bottom: 20px;
-}
-
-.qualificationsContainer ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.qualificationsContainer li {
-    margin-bottom: 15px;
-    line-height: 1.6;
-}
-
-.qualificationsContainer strong {
-    color: #2c3e50; /* Dark color for strong text */
-}
-
-.qualificationsContainer a {
-    color: #e74c3c; /* Soft red color for links */
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
-.qualificationsContainer a:hover {
-    color: #c0392b; /* Darker red for hover effect */
-    text-decoration: underline;
-}
-
-.qualificationsContainer .projectItem {
-    margin-bottom: 15px;
-}
-
-.qualificationsContainer .projectItem a {
-    color: #e74c3c;
+    color: #ffffff;
+    text-shadow: 2px 2px 10px rgba(0, 170, 255, 0.5);
+    letter-spacing: 2px;
+  }
+  
+  h2 {
+    font-size: 2rem;
     font-weight: bold;
-}
-
-.qualificationsContainer .projectItem a:hover {
-    color: #c0392b;
-}
-
-.qualificationsContainer .certifications a {
+    color: #00aaff;
+    margin-bottom: 15px;
+    border-bottom: 2px solid rgba(0, 170, 255, 0.5);
+    padding-bottom: 5px;
     display: inline-block;
-    margin-top: 5px;
-    color: #e74c3c;
+  }
+  
+  /* Section Styling */
+  section {
+    width: 100%;
+    max-width: 850px;
+    margin-bottom: 30px;
+    padding: 25px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.08);
+    box-shadow: 0 4px 15px rgba(0, 170, 255, 0.2);
+    backdrop-filter: blur(10px);
+    transition: all 0.5s ease-in-out;
+    opacity: 0; /* Initially hidden */
+    transform: translateY(30px); /* Move slightly down */
+  }
+  
+  /* Animation for appearing effect */
+  .section-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* List Styling */
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+    line-height: 1.6;
+    color: #ddd;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  li::before {
+    content: "✔";
+    color: #00aaff;
     font-weight: bold;
-    transition: color 0.3s;
-}
-
-.qualificationsContainer .certifications a:hover {
-    color: #c0392b;
+    font-size: 1.2rem;
+  }
+  
+  /* Strong Text */
+  strong {
+    color: #ffffff;
+    font-weight: bold;
+  }
+  
+  /* Links */
+  a {
+    color: #00aaff;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    color: #66cfff;
     text-decoration: underline;
-}
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    section {
+      max-width: 100%;
+      padding: 20px;
+    }
+  
+    h1 {
+      font-size: 2.2rem;
+    }
+  
+    h2 {
+      font-size: 1.6rem;
+    }
+  
+    li {
+      font-size: 1rem;
+    }
+  }
+  

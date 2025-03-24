@@ -1,5 +1,5 @@
 import React from 'react'
-import "./portfoluo.css"
+// import "./portfoluo.css"
 import image from './portfolio_image.jpg'
 function Portfolio() {
   return (

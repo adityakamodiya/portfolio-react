@@ -1,21 +1,23 @@
 import React from 'react';
-import './CSS/Skills.css'; // Import the CSS file
+import './CSS/Skills.css'; // Make sure this is correctly linked
 
 const Skills = () => {
   return (
-    <div className="skillsContainer">
+    <div className="skills-container">
       <h1>Skills</h1>
-      
-      <section className="technicalSkills">
-        <h2>Technical Skills</h2>
-        <ul>
-          <li><strong>Languages:</strong> Java, JavaScript</li>
-          <li><strong>Front-End:</strong> HTML, CSS, React, Bootstrap</li>
-          <li><strong>Back-End:</strong> Node.js, Java, Servlets, JSP, Spring Boot</li>
-          <li><strong>Databases:</strong> MongoDB, MySQL</li>
-          <li><strong>Tools & Technologies:</strong>GitHub, CodeSandbox, Postman, Cloudinary, Firebase</li>
-        </ul>
-      </section>
+
+      <div className="skills-content">
+        <div className="skill-category">
+          <h2>Technical Skills</h2>
+          <ul>
+            <li><span>Languages:</span> Java, JavaScript</li>
+            <li><span>Front-End:</span> HTML, CSS, React, Bootstrap</li>
+            <li><span>Back-End:</span> Node.js, Java, Servlets, JSP, Spring Boot</li>
+            <li><span>Databases:</span> MongoDB, MySQL</li>
+            <li><span>Tools & Technologies:</span> GitHub, CodeSandbox, Postman, Cloudinary, Firebase</li>
+          </ul>
+        </div>
+      </div>
     </div>
   );
 };

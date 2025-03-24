@@ -1,41 +1,124 @@
-/* Tooltip styling */
-.nav-link {
-  position: relative;
-  display: inline-block;
+/* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
-.tooltip {
-  visibility: hidden;
-  background-color: #555;
+/* Navbar container */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #0d0d0d; /* Smooth black */
+  padding: 15px 8%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Ensures horizontal alignment */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+}
+
+/* Logo styling */
+.logo h1 {
+  color: #1db954; /* Neon green */
+  font-size: 24px;
+  font-weight: 600;
+  white-space: nowrap; /* Prevents text from breaking */
+}
+
+/* Navigation */
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 25px; /* Space between items */
+}
+
+.nav-links ul {
+  list-style: none;
+  display: flex;
+  align-items: center; /* Ensures vertical alignment */
+  gap: 20px;
+}
+
+/* Nav items */
+.nav-item {
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.nav-item a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
   color: #fff;
-  text-align: center;
-  padding: 5px;
-  border-radius: 6px;
-
-  /* Position the tooltip text */
-  position: absolute;
-  z-index: 1;
-  bottom: 125%; /* Place above the icon */
-  left: 50%;
-  transform: translateX(-50%);
-  opacity: 0;
-  transition: opacity 0.3s;
-  font-size: 12px;
+  font-size: 18px;
+  font-weight: 500;
+  transition: color 0.3s ease-in-out;
 }
 
-.nav-link:hover .tooltip {
-  visibility: visible;
-  opacity: 1;
+.nav-item i {
+  font-size: 20px;
+  margin-right: 10px;
 }
 
-/* Adjust the appearance of the tooltip */
-.tooltip::after {
-  content: '';
-  position: absolute;
-  top: 100%; /* At the bottom of the tooltip */
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: #555 transparent transparent transparent;
+/* Hover Effects */
+.nav-item:hover {
+  background: #1db954;
+  transform: scale(1.1);
+}
+
+.nav-item:hover a {
+  color: #000;
+}
+
+/* Mobile Menu Toggle */
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between; /* Keeps logo and toggle on one line */
+    padding: 15px 5%;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    background: #0d0d0d;
+    padding: 15px;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.7);
+  }
+
+  .nav-links.mobile-active {
+    display: flex;
+  }
+
+  .nav-links ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .nav-item {
+    width: 100%;
+    padding: 15px 0;
+  }
 }

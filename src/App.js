@@ -2,7 +2,7 @@ import React from 'react'
 import {BrowserRouter,Routes,Route} from "react-router-dom"
 import Header from './Header'
 import Contact from './Contact'
-import Portfolio from './Portfolio'
+
 import Qualification from './Qualification'
 import Work from './Work'
 import Skills from './Skills'
@@ -11,7 +11,7 @@ import Home from './Home'
 // import ".CSS/Home.css"
 import About from './About'
 import HireMe from './HireMe'
-import './CSS/Home.css'; // Import the CSS file
+// import './CSS/Home.css'; // Import the CSS file
 import { useEffect } from 'react'
 function App() {
 
