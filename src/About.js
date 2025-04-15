@@ -20,7 +20,7 @@ const About = () => {
             <Card.Body>
               <Card.Text>
                 Hello! I'm <strong>Aditya Kamodiya</strong>, a <strong>Full Stack Developer</strong> specializing in the MERN stack 
-                (MongoDB, Express.js, React, Node.js) with strong expertise in Java technologies like Spring, Servlets, and JSP.
+                (MongoDB, Express.js, React, Node.js) with strong expertise in <strong>Java</strong>.
               </Card.Text>
               <Card.Text>
                 I am passionate about developing optimized, scalable applications and solving complex problems efficiently. 

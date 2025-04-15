@@ -47,8 +47,8 @@ const Qualification = () => {
       <section>
         <h2>Experience</h2>
         <ul>
-          <li>Full Stack Developer Intern - <strong>Full Stack Learning (2023)</strong></li>
-          <li>Java Programmer (Trainee) - <strong>DZONE (2024)</strong></li>
+          <li>Full Stack Developer Intern - <strong>Full Stack Learning</strong></li>
+          <li>Java Programmer (Trainee) - <strong>DZONE</strong></li>
         </ul>
       </section>
     </div>

@@ -67,21 +67,17 @@ const HireMe = () => {
         </Col>
       </Row>
 
-      {/* Java Technologies Section */}
+      {/* Java Section */}
       <Row className="justify-content-center">
         <Col md={8}>
           <Card className="skills-card java-card">
             <Card.Body>
-              <Card.Title className="text-center">Java & Backend Technologies</Card.Title>
+              <Card.Title className="text-center">Java Development</Card.Title>
               <Card.Text>
-                I develop backend solutions with Java, Servlets, JSP, Spring Boot, and MySQL for optimized performance.
+                I develop efficient backend systems and enterprise-grade solutions using core Java technologies.
               </Card.Text>
               <div className="skills-section">
                 <div className="skill"><p>Java</p><StarRating stars={4} /></div>
-                <div className="skill"><p>Servlets</p><StarRating stars={4} /></div>
-                <div className="skill"><p>JSP</p><StarRating stars={3} /></div>
-                <div className="skill"><p>Spring Boot</p><StarRating stars={3} /></div>
-                <div className="skill"><p>MySQL</p><StarRating stars={4} /></div>
               </div>
             </Card.Body>
           </Card>

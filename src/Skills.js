@@ -12,7 +12,7 @@ const Skills = () => {
           <ul>
             <li><span>Languages:</span> Java, JavaScript</li>
             <li><span>Front-End:</span> HTML, CSS, React, Bootstrap</li>
-            <li><span>Back-End:</span> Node.js, Java, Servlets, JSP, Spring Boot</li>
+            <li><span>Back-End:</span> Node.js, Java, python</li>
             <li><span>Databases:</span> MongoDB, MySQL</li>
             <li><span>Tools & Technologies:</span> GitHub, CodeSandbox, Postman, Cloudinary, Firebase</li>
           </ul>

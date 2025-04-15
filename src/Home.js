@@ -1,6 +1,6 @@
 import React from 'react';
-import image from './home_image.png';
-import resume from './Images/Resume_Aditya.pdf';
+import image from './Images/profileNew.jpg';
+import resume from './Images/Aditya final.pdf';
 import { Link } from 'react-router-dom';
 import './CSS/Home.css'; // Import CSS styles
 
