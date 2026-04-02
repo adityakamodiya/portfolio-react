@@ -1,20 +1,16 @@
-import React from 'react'
-import {BrowserRouter,Routes,Route} from "react-router-dom"
-import Header from './Header'
-import Contact from './Contact'
+import React, { useEffect } from 'react'
+import Header from './components/Header'
+import Home from './components/Home'
+import About from './components/About'
+import Skills from './components/Skills'
+import Work from './components/Work'
+import Qualification from './components/Qualification'
+import Resume from './components/Resume'
+import Contact from './components/Contact'
+import HireMe from './components/HireMe'
+import './index.css'
 
-import Qualification from './Qualification'
-import Work from './Work'
-import Skills from './Skills'
-import Home from './Home'
-
-// import ".CSS/Home.css"
-import About from './About'
-import HireMe from './HireMe'
-// import './CSS/Home.css'; // Import the CSS file
-import { useEffect } from 'react'
 function App() {
-
   useEffect(() => {
     const handleMouseMove = (e) => {
       const trail = document.createElement('div');
@@ -39,22 +35,40 @@ function App() {
       document.removeEventListener('mousemove', handleMouseMove);
     };
   }, []);
+
   return (
-   <>  
-   <BrowserRouter>
-   <Header/>
-   <Routes>
-    <Route path='/'  element={<Home/>}></Route>
-    <Route path='/Hire me'  element={<HireMe/>}></Route>
-    <Route path='/about' element={<About/>}></Route>
-    <Route path='/skills' element={<Skills/>}></Route>
-    <Route path='/contact' element={<Contact/>}></Route>
-    {/* <Route path='/portfolio' element={<Portfolio/>}></Route> */}
-    <Route path='/qualification'element={<Qualification/>}></Route>
-    <Route path='/work'element={<Work/>}></Route>
-   </Routes>
-   </BrowserRouter>   
-   </>
+    <div className="portfolio-app">
+      <Header />
+      <main>
+        <section id="home">
+          <Home />
+        </section>
+        <section id="about">
+          <About />
+        </section>
+        <section id="skills">
+          <Skills />
+        </section>
+        <section id="work">
+          <Work />
+        </section>
+        <section id="qualification">
+          <Qualification />
+        </section>
+        <section id="resume">
+          <Resume />
+        </section>
+        <section id="hire-me">
+          <HireMe />
+        </section>
+        <section id="contact">
+          <Contact />
+        </section>
+      </main>
+      <footer style={{ padding: '40px 20px', textAlign: 'center', borderTop: '1px solid var(--glass-border)', color: 'var(--text-muted)' }}>
+        <p>© {new Date().getFullYear()} Aditya Kamodiya Portfolio. Built with React.</p>
+      </footer>
+    </div>
   )
 }
 
