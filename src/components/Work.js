@@ -9,7 +9,7 @@ const projects = [
     description: "A highly scalable ecommerce platform focused on robust system design, featuring product management, shopping cart, and secure checkout processes.",
     technologies: ["React", "JavaScript"],
     liveLink: "https://ecommerce-system-us5a.vercel.app/shop",
-    githubLink: "https://github.com/adityakamodiya",
+    githubLink: "https://github.com/adityakamodiya/Ecommerce",
     thumbnail: ecommerce_thumb
   },
   {
