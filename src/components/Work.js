@@ -1,6 +1,7 @@
 import React from "react";
 import ecommerce_thumb from '../assets/images/ecommerce_thumb.png';
 import school_thumb from '../assets/images/school_thumb.png';
+import chat_app_thumb from '../assets/images/chat_app_thumb.png';
 import '../assets/styles/Work.css';
 
 const projects = [
@@ -19,6 +20,14 @@ const projects = [
     liveLink: "https://school-website-one-phi.vercel.app/",
     githubLink: "https://github.com/adityakamodiya/school-website",
     thumbnail: school_thumb
+  },
+  {
+    title: "NexusChat - Real-time Chat Application",
+    description: "A full-stack real-time messaging platform featuring secure JWT authentication, multi-room support, and a responsive modern interface.  (Backend hosted on render and frontend on vercel)",
+    technologies: ["MongoDB", "Express", "React", "Node.js", "Websocket", "JWT"],
+    liveLink: "https://chat-app-frontend-sable-kappa.vercel.app/",
+    githubLink: "https://github.com/adityakamodiya/Chat-App-Frontend-",
+    thumbnail: chat_app_thumb
   }
 ];
 
