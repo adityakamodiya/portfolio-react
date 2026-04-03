@@ -10,8 +10,8 @@ const Home = () => {
           <h2 className="hero-subtitle">Hello, I'm</h2>
           <h1 className="hero-title text-gradient">ADITYA KAMODIYA</h1>
           <p className="hero-description">
-            A passionate <span className="highlight">Full Stack Developer</span> crafting elegant, 
-            high-performance web solutions with modern technologies. 
+            A passionate <span className="highlight">Full Stack Developer</span> crafting elegant,
+            high-performance web solutions with modern technologies.
             Turning complex problems into simple, beautiful digital experiences.
           </p>
           <div className="hero-cta">
@@ -20,7 +20,7 @@ const Home = () => {
           </div>
           <div className="hero-socials">
             <a href="https://github.com/adityakamodiya" target="_blank" rel="noreferrer"><i className="fa-brands fa-github"></i></a>
-            <a href="https://linkedin.com/in/adityakamodiya" target="_blank" rel="noreferrer"><i className="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.linkedin.com/in/aditya-kamodiya-9b7a13240/" target="_blank" rel="noreferrer"><i className="fa-brands fa-linkedin"></i></a>
             <a href="mailto:adityakamodiya@gmail.com"><i className="fa-solid fa-envelope"></i></a>
           </div>
         </div>
