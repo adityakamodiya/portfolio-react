@@ -2,6 +2,7 @@ import React from "react";
 import ecommerce_thumb from '../assets/images/ecommerce_thumb.png';
 import school_thumb from '../assets/images/school_thumb.png';
 import chat_app_thumb from '../assets/images/chat_app_thumb.png';
+import backend_api_thumb from '../assets/images/backend_api_thumb.png';
 import '../assets/styles/Work.css';
 
 const projects = [
@@ -28,6 +29,14 @@ const projects = [
     liveLink: "https://chat-app-frontend-sable-kappa.vercel.app/",
     githubLink: "https://github.com/adityakamodiya/Chat-App-Frontend-",
     thumbnail: chat_app_thumb
+  },
+  {
+    title: "Gateway Abroad - E-commerce Backend API",
+    description: "A robust Node.js backend for an e-commerce platform featuring complete admin/customer logic. Includes public endpoints, protected customer features like review posting, admin-only controls for full product management (add/update/delete), and integrated Cloudinary image storage.",
+    technologies: ["Node.js", "Express", "MongoDB", "Cloudinary"],
+    liveLink: "https://e-commerce-backend-api-y8lu.onrender.com/",
+    githubLink: "https://github.com/adityakamodiya/E-commerce-Backend-API",
+    thumbnail: backend_api_thumb
   }
 ];
 
